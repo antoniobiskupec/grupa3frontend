@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method="GET" enctype="text/plain" autocomplete="on">
+      <label for="ime">Ime:</label>
+      <input type="text" name="ime" id="ime" /> <br /><br />
+
+      <p>Odaberite spol</p>
+      <input type="radio" name="spol" id="spolMusko" value="M" />
+      <label for="spolMusko">Muško </label> <br />
+      <input type="radio" name="zensko" id="spolZensko" value="Z" />
+      <label for="spolZensko">Žensko</label> <br />
+      <input type="radio" name="svemirac" id="spolSvemirac" value="S" />
+      <label for="spolSvemirac">Svemirac</label> <br /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      The input type="datetime-local" specifies a date and time input field,
+      with no time zone
+    </p>
+    <input
+      type="date"
+      name="begin"
+      placeholder="dd-mm-yyy"
+      value=""
+      min="1997-01-01"
+      max="2030-12-31"
+    />
+  </body>
+</html>
