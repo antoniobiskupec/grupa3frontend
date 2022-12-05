@@ -1,0 +1,50 @@
+#green {
+  border: 5px solid rgb(0, 0, 0);
+  background-color: green;
+  height: 150px;
+  width: 150px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+}
+
+p {
+  border: solid;
+  border-color: orange;
+  display: block;
+}
+
+#blue {
+  border: 5px solid black;
+  background-color: blue;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  left: 0;
+  right: 0;
+  top: 500px;
+  margin: auto;
+}
+
+#redBlue {
+  border: 5px solid rgb(0, 0, 0);
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 95px;
+  margin: 5px;
+}
+
+#redCircle {
+  border: 5px solid black;
+  border-color: red;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  bottom: 0;
+  right: 0;
+}

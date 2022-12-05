@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.krugovi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.krug-1 {
+  background-color: orange;
+  border: 3px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.krug-2 {
+  background-color: orange;
+  border: 3px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.krug-3 {
+  background-color: orange;
+  border: 3px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.krug-4 {
+  background-color: orange;
+  border: 3px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.krug-5 {
+  background-color: orange;
+  border: 3px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.krug-6 {
+  background-color: orange;
+  border: 3px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 45px;
+}
+
+@-webkit-keyframes animacija1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+    background-color: red;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animacija1 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+    background-color: red;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.krugovi div:nth-child(1) {
+  -webkit-animation: animacija1 1s ease-in infinite;
+          animation: animacija1 1s ease-in infinite;
+}
+
+@-webkit-keyframes animacija2 {
+  0% {
+    transform: translate(0, 0), rotate(0);
+  }
+  50% {
+    transform: translate(0, 500px) scale(0.5) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0), rotate(0);
+  }
+}
+
+@keyframes animacija2 {
+  0% {
+    transform: translate(0, 0), rotate(0);
+  }
+  50% {
+    transform: translate(0, 500px) scale(0.5) rotate(360deg);
+  }
+  100% {
+    transform: translate(0, 0), rotate(0);
+  }
+}
+.krugovi div:nth-child(2) {
+  -webkit-animation: animacija2 5s ease-in-out infinite;
+          animation: animacija2 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes animacija3 {
+  0% {
+    transform: rotate(0);
+    border-radius: 100%;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-radius: 0%;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 100%;
+  }
+}
+
+@keyframes animacija3 {
+  0% {
+    transform: rotate(0);
+    border-radius: 100%;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-radius: 0%;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 100%;
+  }
+}
+.krugovi div:nth-child(3) {
+  -webkit-animation: animacija3 5s linear infinite;
+          animation: animacija3 5s linear infinite;
+}
+
+@-webkit-keyframes animacija4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animacija4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.krugovi div:nth-child(4) {
+  -webkit-animation: animacija4 1s ease-in-out infinite;
+          animation: animacija4 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes animacija5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 300px) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 300px) rotate(360deg);
+    background-color: red;
+  }
+  75% {
+    transform: translate(0, 300px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes animacija5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, 300px) rotate(0deg);
+  }
+  50% {
+    transform: translate(0, 300px) rotate(360deg);
+    background-color: red;
+  }
+  75% {
+    transform: translate(0, 300px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+.krugovi div:nth-child(5) {
+  -webkit-animation: animacija5 6s ease-in-out infinite;
+          animation: animacija5 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes animacija6 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+    background: red;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animacija6 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+    background: red;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.krugovi div:nth-child(6):hover {
+  -webkit-animation: animacija6 2s ease-in-out infinite;
+          animation: animacija6 2s ease-in-out infinite;
+}/*# sourceMappingURL=style5.css.map */

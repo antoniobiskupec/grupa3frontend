@@ -1,0 +1,28 @@
+* {
+  background-color: black;
+}
+
+.box {
+  border: 5px solid blue;
+  background-color: aliceblue;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+}
+
+@keyframes animacija1 {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(100deg);
+    background: red;
+  }
+  100% {
+    transform: scale(3);
+  }
+}
+
+.box:hover {
+  animation: animacija1 1s ease-in-out;
+}
