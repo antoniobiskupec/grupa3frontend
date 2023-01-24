@@ -1,0 +1,90 @@
+@-webkit-keyframes animation {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes animation {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes slide-down {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(./blur-clean.jpg);
+  background-image: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  width: 100vw;
+}
+.container div {
+  border: 5px solid white;
+  flex-basis: 24%;
+  font-size: 8vw;
+  font-weight: bold;
+  padding: 5%;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -80vh;
+}
+.container div:nth-child(1) {
+  background-color: rgba(255, 0, 0, 0.5);
+  -webkit-animation: slide-down 1.5s ease-in-out forwards;
+          animation: slide-down 1.5s ease-in-out forwards;
+}
+.container div:nth-child(2) {
+  background-color: rgba(151, 189, 0, 0.507);
+  -webkit-animation: slide-down 1.5s ease-in-out 1.5s forwards;
+          animation: slide-down 1.5s ease-in-out 1.5s forwards;
+}
+.container div:nth-child(3) {
+  background-color: rgba(0, 68, 255, 0.5);
+  -webkit-animation: slide-down 1.5s ease-in-out 3s forwards;
+          animation: slide-down 1.5s ease-in-out 3s forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

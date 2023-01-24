@@ -1,0 +1,55 @@
+@import "base/colors";
+@import "abstracts/mixins";
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-image: url(./blur-clean.jpg);
+  background-image: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: $color1;
+}
+
+.container {
+  @include flex-container;
+  div {
+    border: 5px solid $color1;
+    flex-basis: 24%;
+    font-size: 8vw;
+    font-weight: bold;
+    padding: 5%;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -80vh;
+
+    &:nth-child(1) {
+      background-color: $color2;
+      animation: slide-down 1.5s ease-in-out forwards;
+    }
+    &:nth-child(2) {
+      background-color: $color3;
+      animation: slide-down 1.5s ease-in-out 1.5s forwards;
+    }
+    &:nth-child(3) {
+      background-color: $color4;
+      animation: slide-down 1.5s ease-in-out 3s forwards;
+    }
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    top: -80vh;
+  }
+  100% {
+    top: 0;
+  }
+}
